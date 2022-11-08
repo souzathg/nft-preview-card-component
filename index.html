@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="/dist/output.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main class="bg-neutral-main flex flex-col justify-center items-center w-screen h-screen font-outfit">
+    <div class="bg-neutral-card text-white flex flex-col w-auto max-w-[20.5rem] h-auto p-5 rounded-xl">
+      <a href="" class="hover:bg-primary-cyan hover:opacity-100 rounded-xl transition ease-in-out duration-300">
+        <img src="images/image-equilibrium.jpg" alt="NFT image"
+          class="w-72 h-72 rounded-xl hover:opacity-50 transition ease-in-out duration-300" />
+      </a>
+      <h1 class="my-5 font-semibold text-xl hover:text-primary-cyan transition duration-300"><a href="">Equilibrium
+          #3429</a></h1>
+      <h2 class="font-light text-primary-soft_blue mb-5">Our Equilibrium collection promotes balance and calm.</h2>
+      <div class="w-auto h-auto flex content-center justify-between pb-5 mb-5 border-b border-neutral-line">
+        <h3 class="font-normal text-primary-cyan">
+          <svg class="inline-block mr-1 mb-2" width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+              fill="#00FFF8" />
+          </svg>
+          0.041 ETH
+        </h3>
+        <p class="text-primary-soft_blue">
+          <svg class="inline-block mb-1" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+              fill="#8BACD9" />
+          </svg>
+          3 days left
+        </p>
+      </div>
+      <div class="flex w-auto h-auto justify-start items-center">
+        <img class="w-10 h-10 mr-5 border-white border rounded-full" src="images/image-avatar.png" alt="Author icon">
+        <p class="text-primary-soft_blue">Creation of <span
+            class="text-white hover:text-primary-cyan tranition duration-300"><a href="">Jules Wyvern</a></span></p>
+      </div>
+    </div>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="text-white absolute bottom-4">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="hover:text-primary-cyan transition duration-300">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/souzathg" target="_blank"
+        class="hover:text-primary-cyan transition duration-300">@souzathg</a>.
+    </div>
+  </main>
 </body>
+
 </html>
